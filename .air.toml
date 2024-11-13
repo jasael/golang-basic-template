@@ -1,0 +1,18 @@
+# Config file for Air (https://github.com/cosmtrek/air) in TOML format
+
+[build]
+# Command to build the app
+cmd = "go build -o ./bin/main ./cmd/main.go"
+# Binary file name
+bin = "bin/main"
+# Working directory
+dir = "."
+# Patterns to watch
+include_ext = ["go"]
+# Exclude files
+exclude_dir = ["vendor"]
+# Command to run afetch build
+run_after_build = "chmod +x bin/main"
+
+[log]
+level = "debug"
